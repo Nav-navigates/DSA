@@ -16,9 +16,9 @@ public:
         int low=1; int high = n;
         while(low<=high){
             int mid = low + (high-low)/2;
-            if(guess(mid) == 0){
+            if(guessNumber(mid) == 0){
                 return mid;
-            }else if (guess(mid) == -1){
+            }else if (guessNumber(mid) == -1){
                 // mid>pick
                 high = mid -1;
             }else{
